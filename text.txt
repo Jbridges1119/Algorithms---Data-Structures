@@ -1,0 +1,13 @@
+
+
+-- maxChars --
+Access object value using for loop with [] not . notation
+for (let letter of str) 
+letterCount[letter]
+#This tripped me up - it's a string value returned from the loop so it needs to be in square brackets
+
+-- fizzbuzz --
+switch statements are meant to be true - don't need a value fed into it
+Original switch (i) - Wrong
+New switch (true) - Right
+#Tripped me up. Had it all right except I was just feeding a variable into the switch statement instead of true
