@@ -8,6 +8,15 @@ letterCount[letter]
 
 -- fizzbuzz --
 switch statements are meant to be true - don't need a value fed into it
-Original switch (i) - Wrong
-New switch (true) - Right
+Original - `switch (i)` - Wrong
+New - `switch (true)` - Right
 #Tripped me up. Had it all right except I was just feeding a variable into the switch statement instead of true
+
+-- anagrams --
+using a helper function to reduce repeated code
+familiarity with "Object.keys" helps with this problem
+#my way worked but his way is waaay better - his second way is pretty simple
+
+-- capitalize --
+being familiar with splice and slice would be really helpful with this question
+#I got it but it took me a few console logs to know what slice/splice is doing
