@@ -20,3 +20,10 @@ familiarity with "Object.keys" helps with this problem
 -- capitalize --
 being familiar with splice and slice would be really helpful with this question
 #I got it but it took me a few console logs to know what slice/splice is doing
+
+-- steps --
+used .repeat(n);
+allowed me to repeat the spaces n times and then I can manipulate that.
+
+-- pyramid --
+Recursive - I got got on the intitalizing pyra array. I was reseting it everytime it started untill I push the step == 0 conditional.
