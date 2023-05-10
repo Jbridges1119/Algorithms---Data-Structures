@@ -27,3 +27,6 @@ allowed me to repeat the spaces n times and then I can manipulate that.
 
 -- pyramid --
 Recursive - I got got on the intitalizing pyra array. I was reseting it everytime it started untill I push the step == 0 conditional.
+
+-- vowels --
+.includes(n) works on strings
