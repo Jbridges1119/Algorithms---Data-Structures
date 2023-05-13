@@ -30,3 +30,9 @@ Recursive - I got got on the intitalizing pyra array. I was reseting it everytim
 
 -- vowels --
 .includes(n) works on strings
+
+-- matrix --
+Was really tough.
+Found it easiest to break it up into 2 halfs - going up - going down.
+first attempt had repeating code but a little easier to follow through code
+second attemp I tried to reduce repeating code. A little harder to read through
