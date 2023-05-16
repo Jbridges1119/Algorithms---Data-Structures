@@ -31,8 +31,20 @@ Recursive - I got got on the intitalizing pyra array. I was reseting it everytim
 -- vowels --
 .includes(n) works on strings
 
--- matrix --
+-- matrix -- *important*
 Was really tough.
 Found it easiest to break it up into 2 halfs - going up - going down.
 first attempt had repeating code but a little easier to follow through code
 second attemp I tried to reduce repeating code. A little harder to read through
+
+-- fib -- *important*
+fibOne - Mixed up the n count when using as length in conditional and arr index. Made me forget to put '<='.
+fibTwo - must know fib(0) returns 0, fib(1) returns 1 
+       - reduces down to all fib(1) and fib(0), then adds them all up to give answer. 
+       - doesn't need an array to carry out
+       - really bad runtime (2^n) 
+fibThree - This is how you improve it.
+         - Called 'memoization'
+         - we run are slow fibTwo function through a memorize function that stores they args and results as    key:value pairs. 
+         - If we see the same args again we can return the stored value.
+         - .apply() - Invokes function it's called on and takes an array as its second argument and passes the members of that array as arguments.
