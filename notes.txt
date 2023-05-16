@@ -1,0 +1,8 @@
+DATA STRUCTURE
+- organize with optimal 'runetime complexity' for modifying records
+
+
+QUEUE DATA STRUCTURE
+- like a line(queued up)
+- FIFO (First one in(longest in queue) - first one out) 
+- can use an array but limit access to front(unshift - add to left) and end(pop - remove right) modification only 

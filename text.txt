@@ -48,3 +48,9 @@ fibThree - This is how you improve it.
          - we run are slow fibTwo function through a memorize function that stores they args and results as    key:value pairs. 
          - If we see the same args again we can return the stored value.
          - .apply() - Invokes function it's called on and takes an array as its second argument and passes the members of that array as arguments.
+
+-- queue --
+See notes
+
+-- weave --
+source is already made into our class
