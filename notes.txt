@@ -1,8 +1,20 @@
-DATA STRUCTURE
+DATA STRUCTURE **All Important**
 - organize with optimal 'runetime complexity' for modifying records
 
 
-QUEUE DATA STRUCTURE
+QUEUE - DATA STRUCTURE
 - like a line(queued up)
 - FIFO (First one in(longest in queue) - first one out) 
-- can use an array but limit access to front(unshift - add to left) and end(pop - remove right) modification only 
+- can use an array but limit access to front(unshift - add to left) and end(pop - remove right) mutation only 
+
+
+STACK - DATA STRUCTURE
+- like a pez dispenser
+- FILO (First one in(longest in stack) - last one out)
+- can use an array but limit access to end(push - add to right) (pop - remove right) mutation only.
+
+
+LINKED LIST - DATA STRUCTURE 
+NODE - both the data and the refrence (usually called 'next') to next node (eg. {data: "123", next: "node2"})
+HEAD - first node
+TAIL - last node (reference points to null)

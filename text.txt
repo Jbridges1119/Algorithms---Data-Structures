@@ -54,3 +54,9 @@ See notes
 
 -- weave --
 source is already made into our class
+
+-- stack -- *important*
+Forgot to put this.stackArray within class
+
+-- qfroms -- 
+Forgot that stackA was FILO so tired peeking the last in instead of first in
