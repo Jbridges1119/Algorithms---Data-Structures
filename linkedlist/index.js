@@ -17,7 +17,7 @@ class LinkedList {
   insertFirst(data) {
     //this.head can be passed in to Node() because 'this.head' becomes a nested object that branches down through previous 'this.head'(s).
     //eg. {data: value, next: {data: difValue, next: {...} }}
-    this.head = new Node(data, this.head)
+    this.head = new Node(data, this.head);
   }
 
   size() {
@@ -51,11 +51,61 @@ class LinkedList {
   }
 
   removeFirst() {
-    return this.head = this.head ? this.head.next : this.head
+    return this.head = this.head ? this.head.next : this.head;
   }
 
   removeLast() {
+    let node = this.head;
+    let prev = node;
 
+    //nothing in list - nothing to do
+    if(!node) {
+      return;
+    }
+    //sets head to null - only had 1 in list
+    if (!node.next) {
+      this.head = null
+      return;
+    }
+
+    //counts back till we get last 
+    while (node.next) {
+      prev = node;
+      node = node.next;
+    }
+    //sets previous last '.next' to null
+    prev.next = null;
+    return this.head;
+  }
+
+  insertLast(entry) {
+    let node = this.getLast();
+    //if there is no head then we set it - otherwise we insert to last
+    node ? node.next = new Node(entry) : this.head = new Node(entry);
+  }
+
+  getAt(index) {
+    // let count = 0,
+    //     node = this.head,
+    //     outOfLimit = false
+
+    // if (!node) {
+    //   return null;
+    // }
+
+    // while (node.prev) {
+    //   if(count < index) {
+    //     count++
+    //     node = node.next
+    //   } else {
+    //     outOfLimit = true
+    //   }
+
+    // }
+    // if (outOfLimit) {
+    //   return null;
+    // }
+    // return node
   }
 }
 
