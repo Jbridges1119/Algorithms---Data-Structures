@@ -85,27 +85,44 @@ class LinkedList {
   }
 
   getAt(index) {
-    // let count = 0,
-    //     node = this.head,
-    //     outOfLimit = false
+    let node = this.head;
+    //loop through node - 
+    //Each loop sets node to next index
+    //if there is no next then index given is out of range and we return null
+    //once iteration is finish we return node 
+    for(let i = 0; i < index; i++) {
+      if(node?.next) {
+        node = node.next;
+      } else {
+        return null;
+      }
+    }
+    return node;
+  }
 
-    // if (!node) {
-    //   return null;
-    // }
+  removeAt(index) {
+    //Work through step by step - Found this one difficult
 
-    // while (node.prev) {
-    //   if(count < index) {
-    //     count++
-    //     node = node.next
-    //   } else {
-    //     outOfLimit = true
-    //   }
+    //Head pointed at null - then return
+    if(!this.head) {
+      return;
+    }
 
-    // }
-    // if (outOfLimit) {
-    //   return null;
-    // }
-    // return node
+    //Remove first in list - edge case due to no previous
+    if (index === 0 ) {
+      this.head = this.head.next;
+      return;
+    }
+
+    //find previous
+    const previous = this.getAt(index - 1);
+    //if index is out of bounds we return - edge case
+    if (!previous || !previous.next) {
+      return;
+    }
+
+    //sets previous to point at the second up from it
+    previous.next = previous.next.next;
   }
 }
 

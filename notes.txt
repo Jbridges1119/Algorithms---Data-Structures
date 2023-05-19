@@ -14,7 +14,7 @@ STACK - DATA STRUCTURE
 - can use an array but limit access to end(push - add to right) (pop - remove right) mutation only.
 
 
-LINKED LIST - DATA STRUCTURE 
+LINKED LIST - DATA STRUCTURE **Important**
 NODE - both the data and the refrence (usually called 'next') to next node (eg. {data: "123", next: "node2"})
 HEAD - first node
 TAIL - last node (reference points to null)
