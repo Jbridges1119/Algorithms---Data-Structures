@@ -124,6 +124,33 @@ class LinkedList {
     //sets previous to point at the second up from it
     previous.next = previous.next.next;
   }
+
+  insertAt(data, index) {
+    //Edge cases - check if no head or index = 0 to insert in first location
+    if(!this.head || index == 0) {
+      this.insertFirst(data, this.head);
+      return;
+    }
+
+    //Get previous index location or get last node if out of bounds
+    let previous = this.getAt(index - 1) || this.getLast();
+    previous.next = new Node(data, previous.next)
+
+    // //-- if getLast didn't exist we would do below --
+    // let next = this.getAt(index);
+    // //if previous is out of bounds - roll back getAt function by 1 till it's not
+    // if(!previous) {
+    //   let i = 1
+    //   while (!previous) {
+    //     previous = this.getAt(index - 1 - i)
+    //     i++
+    //   }
+    // }
+    // //insert our data
+    // previous.next = new Node(data, next)
+  }
+
+  
 }
 
 module.exports = { Node, LinkedList };
