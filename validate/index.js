@@ -19,11 +19,11 @@ function validate(node, min = null, max = null) {
   //we are setting our min and max when we call our recursive function
   //We walk through the tree left side first becasue it's the first if statement
   //this is a depth search
-  //only called when 'node exists' AND if validate returns FALSE
+  //false called when 'node exists' AND if validate returns FALSE
   if (node.left && !validate(node.left, min, node.data)){
     return false;
   }
-  if (node.right && !validate(node.right, max, node.data)) {
+  if (node.right && !validate(node.right, node.data, max)) {
     return false;
   }
 
