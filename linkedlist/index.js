@@ -150,7 +150,32 @@ class LinkedList {
     // previous.next = new Node(data, next)
   }
 
+  forEach(fn) {
+    if (!this.head) {
+      return null;
+    }
+    
+    let node = this.head;
+    let counter = 0;
+
+    //loop through our linked list 
+    //perform our function(callback)
+    //Move down our list - counter is our index ref
+    while (node) {
+      fn(node, counter);
+      node = node.next;
+      counter++
+    }
+  }
   
+  //Generators - the star makes it a generator - watch videos about them 
+  *[Symbol.iterator]() {
+    let node = this.head;
+    while (node) {
+      yield node;
+      node = node.next;
+    }
+  }
 }
 
 module.exports = { Node, LinkedList };

@@ -59,4 +59,24 @@ source is already made into our class
 Forgot to put this.stackArray within class
 
 -- qfroms -- 
-Forgot that stackA was FILO so tired peeking the last in instead of first in
+Forgot that stackA was FILO so tried peeking the last in instead of first in.
+
+-- midpoint --
+forgot that both slow and fast start on same point
+origionally built around that (refactored code for proper procedure)
+
+-- circular --
+basically the same as midpoint but checking if fast == flow while executing.
+
+-- fromlast --
+Actually pretty simple
+We start just like normal, then move fast variable forward the amount from last given
+Then we iterate through the list one at a time checking fast.next is null
+If it is then we know slow is in the correct position
+
+-- bst --
+recursivly traverse a binary search tree is easiest
+
+-- validate --
+we take a min(this.data) and max(parent to this.data)
+recursively depth search comparing to our min and max

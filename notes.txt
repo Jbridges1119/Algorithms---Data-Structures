@@ -18,4 +18,22 @@ LINKED LIST - DATA STRUCTURE **Important**
 NODE - both the data and the refrence (usually called 'next') to next node (eg. {data: "123", next: "node2"})
 HEAD - first node
 TAIL - last node (reference points to null)
+NEXT - points to next node or null at the end
 If being asked to make getFirst, getLast, ect. - could ask if we should just make getAt and then use getAt to make those previous functions.
+** The 'slow' and 'fast' method is the go-to tool for linked list questions.
+
+TREE - DATA STRUCTURE
+NODE - same as linkedlist data and childrend (refrence to next - BUT is/can be mulitple)
+CHILDREN - like next but node can have multiple refrences
+PARENT - one parent can have many children; child can only have one parent
+TRAVERSAL - Breadth vs Depth
+**Important** BREADTH - Left to right - Then down 1; Practice this**
+DEPTH - Down Left until bottom - Up one and repeat on next until no more left
+
+BINARY SEARCH TREE - DATA STRUCTURE
+Parent - only has 2 children
+left child < parent
+right child > parent
+Forms the tree so that: 
+bottom left is lowest value
+bottom right is highest value
