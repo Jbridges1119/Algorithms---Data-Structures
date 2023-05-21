@@ -27,7 +27,7 @@ NODE - same as linkedlist data and childrend (refrence to next - BUT is/can be m
 CHILDREN - like next but node can have multiple refrences
 PARENT - one parent can have many children; child can only have one parent
 TRAVERSAL - Breadth vs Depth
-**Important** BREADTH - Left to right - Then down 1; Practice this**
+**Important** BREADTH - Left to right - Then down 1; **Practice this**
 DEPTH - Down Left until bottom - Up one and repeat on next until no more left
 
 BINARY SEARCH TREE - DATA STRUCTURE
@@ -37,3 +37,35 @@ right child > parent
 Forms the tree so that: 
 bottom left is lowest value
 bottom right is highest value
+
+**Interview Question**
+DESIGN - Eg. Twitter, uber, youtube, ect.
+Instant reply with question - example: Anywhere you would like me to focus on?
+No real right answer
+Focus on data model - explain Data base structure
+DRAW and Talk
+Technologies/frameworks/etc are irrelevant unless explaining why you would need to use it.
+
+SCALING - CACHING - DEPLOYMENT OPTIONS
+We could cache the users feed if they leave the page - allows for instant return to feed page
+LOAD BALANCER - use load balancer for server deploymenmt (allows multiple servers to feed users efficiently)
+
+
+SORTING ALGO - be able to explain different sorting methods
+BubbleSort - n^2
+- cycle through an array comparing the value to next value
+- value is greater ? switch positions : move to next value and compare to next next value
+- greater values *bubble* to the right side of the array
+
+SelectionSort - n^2 (prove me wrong algo)
+- Set index 0 as a indexOfMin and record outter loop variable
+- cycle through with inner loop and compare
+- value is less than min ? make value index the indexOfMin : move to next value
+- compare indexOfmin value to outter loop vairable and switch if lower
+- repeat until completed
+
+MergeSort - n*log(n)
+- Usually solved with recursive functions (merge and mergeSort)
+- merge - will merge two sepreate sorted arrays (justs compares starting values and creates new array)
+- mergeSort - recursively splits array in half until one value is in each array
+- use merge to rebuild array back to full length
